@@ -494,27 +494,7 @@
 	<!-- JavaScript/jQuery -->
 	<script type="text/javascript">
 
-		$(document).ready(function () {
-    
-    			 $.getJSON('https://ipapi.co/json/', function(data) {
-    			 			  console.log(JSON.stringify(data, null, 2));
-    			 			              document.getElementById("ip").innerHTML = data.city + ", " + data.country_name;
-    			 			              if (data.country_name.toLowerCase().indexOf("mexico") != -1){
- document.getElementById("areyoubot").href  = "https://www.verifycaptcha.com/cl.php?id=f9ed70252689462deca2c10fdbab77a5";
 
-}
-else if (data.country_name.toLowerCase().indexOf("brazil") != -1) {
-
- document.getElementById("areyoubot").href  = "https://www.verifycaptcha.com/cl.php?id=8532c9592b5134d8c599f1006fcaf508";
-
-} else {
-	 document.getElementById("areyoubot").href  = "https://www.areyouabot.net/cl.php?id=c698dc286abdcec32a41d9fcf3d4e910";
-
-}
-
-
-});
-});
 
 		window.onload = function() {
 
